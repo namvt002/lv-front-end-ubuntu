@@ -1,18 +1,17 @@
 import React from 'react';
+import Stack from '@mui/material/Stack';
 import './header.style.scss';
-// import TopNav from './TopNav/topnav';
-// import BottomNav from './BottomNav/bottomnav';
+import WrapSearch from '../../pages/Home/Dashboard/WrapSearch';
+import Nav from '../Nav';
 
-function Header() {
+export default function Header() {
     return (
-        <div className="home-bar">
-            <div className="header">
-                {/* <TopNav/> */}
-                <p className='line line-central'></p>
-                {/* <BottomNav /> */}
-            </div>
-        </div>
+        <>
+            <Stack className="header">
+                <Nav></Nav>
+                <WrapSearch></WrapSearch>
+            </Stack>
+            
+        </>
     );
 }
-
-export default Header

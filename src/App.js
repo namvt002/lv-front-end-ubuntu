@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer/footer.component";
-import Header from "./components/Header/header.component";
+import Nav from "./components/Nav";
 import route from "./Router";
 
 
@@ -13,12 +12,10 @@ function App() {
 
   return (
     <div className="App">
-		<Header/>
+			<Nav></Nav>
 			<Routes>
 				{menu}
 			</Routes>
-		<Footer/>
-
     </div>
   );
 }
