@@ -1,8 +1,8 @@
 .breadcrumb_background {
     background-image: url(../../../../public/images/backgroudProductDetail.jpg);
-    padding: 25px 0px;
+    padding: 20px 0px;
     background-repeat: no-repeat;
-    min-height: 450px;
+    min-height: 420px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -19,6 +19,7 @@
     float: left;
     flex-flow: column;
     position: relative;
+    background-size: contain;
     .title_full {
         width: 100%;
         float: left;
@@ -37,4 +38,85 @@
             text-align: center;
         }
     }
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.thumb_product_details {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.thumb_product_details .owl-item .itemer .button_play, .thumb_product_details .owl-item .itemer .button_views_image {
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 90px;
+    border: 2px solid #eaebf3;
+}
+
+.thumb_product_details .owl-item .itemer .button_play img, .thumb_product_details .owl-item .itemer .button_views_image img {
+    width: auto;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 60px;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+}
+
+// img {
+//     border: 0 none;
+//     max-width: 100%;
+//     height: auto;
+// }
+
+.owl-carousel.owl-loaded {
+    display: block;
 }

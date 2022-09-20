@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/footer.component";
 import Nav from "./components/Nav";
 import route from "./Router";
 
@@ -16,6 +17,7 @@ function App() {
 			<Routes>
 				{menu}
 			</Routes>
+			<Footer />
     </div>
   );
 }
