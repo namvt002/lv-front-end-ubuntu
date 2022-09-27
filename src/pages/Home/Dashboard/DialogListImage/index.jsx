@@ -6,13 +6,13 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-
-
+import { Pannellum } from "pannellum-react";
+import myImage from "../../../../public/images/download";
 import './index.scss';
 
 export default function DialogListImage({ open, handleClickCloseDialog, listProduct }) {
     const [imgActive, setImgActive] = React.useState(0);
-    const firstProduct = listProduct[0];
+    const firstProduct = myImage;
     const [imgSrc, setImgSrc] = React.useState(firstProduct.image);
 
     const setImgThumbSrc = (imgSrc, index) => {
@@ -34,7 +34,20 @@ export default function DialogListImage({ open, handleClickCloseDialog, listProd
                 <DialogContent>
                     <DialogContentText className="dialog-content">
                         <Box sx={{position: 'relative'}}>
-                            <img className="img-thumb" alt="" src={imgSrc}></img>
+                                <Pannellum
+                                    width="100%"
+                                    height="500px"
+                                    image={
+                                        imgSrc
+                                    }
+                                    pitch={10}
+                                    yaw={180}
+                                    hfov={110}
+                                    autoLoad
+                                    showZoomCtrl={false}
+                                >
+                                </Pannellum>
+                            {/* <img className="img-thumb" alt="" src={imgSrc}></img> */}
                             <Box className="list-img">
                                 {listProduct.map((product, index) => {
                                     const active = index === imgActive ? 'active' : '';

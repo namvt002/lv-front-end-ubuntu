@@ -8,10 +8,11 @@ import ListProductSale from './Dashboard/ListProductSale';
 import ListNew1 from './Dashboard/ListNew1';
 import ListNew2 from './Dashboard/ListNew2';
 import WrapSearch from './Dashboard/WrapSearch';
+import Layout from '../../layout';
 
 export default function Home() {
     return (
-        <>
+        <Layout>
             <Stack className="header">
                 <WrapSearch></WrapSearch>
             </Stack>
@@ -21,6 +22,6 @@ export default function Home() {
             <ListNew1></ListNew1>
             <ListProductSale></ListProductSale>
             <ListNew2></ListNew2>
-        </>
+        </Layout>
     );
 }

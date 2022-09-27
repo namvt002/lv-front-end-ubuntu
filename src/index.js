@@ -10,12 +10,12 @@ import store from './redux/app';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		{/* <Provider store={store}> */}
+		<Provider store={store}>
 			<BrowserRouter>
 				<SnackbarProvider preventDuplicate maxSnack={1} anchorOrigin={{ vertical: 'top', horizontal: 'right', }} autoHideDuration={3000}>
 					<App />
 				</SnackbarProvider>
 			</BrowserRouter>
-		{/* </Provider> */}
+		</Provider>
 	</React.StrictMode>
 );
