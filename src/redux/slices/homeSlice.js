@@ -14,7 +14,7 @@ const home = createSlice({
             return action?.payload
         },
         getHome: (state) => { },
-        updateSetting: (state,action?: PayloadAction) => { }
+        updateSetting: (state,action) => { }
     },
 })
 

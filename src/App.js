@@ -1,8 +1,10 @@
 import { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Router, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer/footer.component";
 import Nav from "./components/Nav";
-import route from "./Router";
+import { Link, Outlet } from 'react-router-dom';
+import { route } from "./Router";
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
@@ -19,12 +21,14 @@ function App() {
 
 
   return (
-    <div className="App">
-			<Nav></Nav>
-			<Routes>
-				{menu}
-			</Routes>
-			<Footer />
+
+	 <div className="App">
+		
+		<Routes>
+			{menu}
+		</Routes>
+
+		
     </div>
   );
 }

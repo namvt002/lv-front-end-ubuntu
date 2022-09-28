@@ -9,10 +9,6 @@ import MenuItem from '@mui/material/MenuItem';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Stack from '@mui/material/Stack';
 import Link from '@mui/material/Link';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from '../../public/images/logo_dashboard.png';
 
@@ -69,7 +65,7 @@ export default function Nav() {
                             spacing={2}
                         >
                             <Box>
-                                <Link sx={{ color: 'white', mr: 5 }} href="#" underline="none"> Trang chủ</Link>
+                                <Link sx={{ color: 'white', mr: 5 }} href="http://localhost:3000/" underline="none"> Trang chủ</Link>
                             </Box>
                             <Box>
                                 <Link
@@ -144,33 +140,6 @@ export default function Nav() {
                             onClick={toggleDrawer("left", false)}
                             onKeyDown={toggleDrawer("left", false)}
                         >
-                            <List>
-                                <ListItem>
-                                    <ListItemButton>
-                                        <ListItemText><Link sx={{ color: 'black' }} underline="none"> Trang chủ</Link></ListItemText>
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemButton>
-                                        <ListItemText><Link sx={{ color: 'black' }} underline="none"> Tất cả tin rao</Link></ListItemText>
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemButton>
-                                        <ListItemText><Link sx={{ color: 'black' }} underline="none"> Tin tức</Link></ListItemText>
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemButton>
-                                        <ListItemText><Link sx={{ color: 'black' }} underline="none"> Giới thiệu</Link></ListItemText>
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemButton>
-                                        <ListItemText><Link sx={{ color: 'black' }} underline="none"> Liên hệ</Link></ListItemText>
-                                    </ListItemButton>
-                                </ListItem>
-                            </List>
                         </Box>
                     </SwipeableDrawer>
                 </React.Fragment>
